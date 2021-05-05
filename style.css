@@ -16,14 +16,14 @@ header {
     border-radius: 15px 15px 0 0;
 }
 
-nav ul {
+.nav-ul {
     background-color: #344fa1;
     padding: 10px 0;
     margin: 0;
     border-radius: 15px 15px 0 0;
 }
 
-nav ul li {
+.nav-btn {
     margin: 5px 5px;
     display: inline-block;
     cursor: pointer;
@@ -68,7 +68,16 @@ nav ul li a {
     width: 30%;
     margin-left: 30px;
     color: #fff;
-    
+}
+
+.core-values h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.core-values p {
+line-height: 25px;
+text-align:inherit;
 }
 
 .offer {
@@ -82,7 +91,7 @@ nav ul li a {
     overflow:  hidden;
     display: inline-block;
     cursor: pointer;
-    margin: 23px;
+    margin: 25px;
 }
 
 .items img {
@@ -102,7 +111,7 @@ nav ul li a {
 
 .items h2 {
     position: absolute;
-    background-image: linear-gradient(to top, #344fa1, #344fa198); 
+    background: #344fa1d1; 
     bottom: -23px;
     left: 0;
     color:#fff;
@@ -116,16 +125,18 @@ nav ul li a {
 
 footer {
     background-color:#344fa1;
+    display: flex;
     color: #fff;
     font-size: 19px;
-    text-align: right;
-    padding: 10px;
+    padding: 25px;
     margin-top: 25px;
     border-radius: 0 0 15px 15px;
+    justify-content:flex-end;
+    align-items: center;
 }
 
 footer span {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 footer img {
