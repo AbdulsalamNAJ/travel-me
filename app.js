@@ -82,12 +82,16 @@ var promo;
 
 while (promo !== "sum2021") {
     promo = prompt("You MUST enter a promo code to see our latest offers.   * If you don't have one use:   SUM2021  ");
+    if (promo == null){
+        promo = "";
+    }
     promo = promo.toLowerCase();
 }
 
-var promoCode = document.getElementById('promo');
 
-promoCode.textContent = "SUM2021";
+var offers = document.getElementById('offers');
+
+offers.innerHTML = '<h2 class="offer">Offers for your promo code : <span class="promo-h2">SUM2021</span></h2><div class="items istanbul"><h3>Special offer</h3><img src="./img/istanbul.jpg" alt=""><h2 class="items-h2">Istanbul</h2></div><div class="items dubai"><h3>Special offer</h3><img src="./img/dubai.jpg" alt=""><h2 class="items-h2">Dubai</h2></div><div class="items doha"><h3>Special offer</h3><img src="./img/doha.jpg" alt=""><h2 class="items-h2">Doha</h2></div><div class="items sharm-el-sheikh"><h3>Special offer</h3><img src="./img/sharm-el-sheikh.jpg" alt=""><h2 class="items-h2">Sharm El Sheikh</h2></div><div class="items beirut"><h3>Special offer</h3><img src="./img/beirut.jpg" alt=""><h2 class="items-h2">Beriut</h2></div><div class="items paphos"><h3>Special offer</h3><img src="./img/paphos.jpg" alt=""><h2 class="items-h2">Paphos</h2></div>';
 
 var rate = prompt('From what you know about us give us a rate :  from  1  to  5'); 
 
@@ -120,7 +124,7 @@ starDiv.innerHTML = starCount;
 }
 
 
-var fishType = prompt('Imagin that this background is a real SEA what would you like to see in it?    * Just choose a number:    1.turtles    2.fishes     3.crabs ')
+var fishType = prompt('Imagin this background is a real SEA what would you like to see in it?    * Just enter a number:    1.turtles    2.fishes     3.crabs ');
 
 var backGround = document.getElementById('background');
 
@@ -134,7 +138,11 @@ else if (fishType == 3) {
     fishImage = '<img class="background-img" src="./img/crab.svg" alt="">'
 }
 
-var fishMax = prompt('How many of these you would like to see?   * MAX is  [  15  ]');
+if (fishType !== null) {
+    if (3 >= fishType > 0) {
+    var fishMax = prompt('How many of these you would like to see?   * MAX is  [  15  ]');
+}
+}
 
 var fishCount = "";
 
