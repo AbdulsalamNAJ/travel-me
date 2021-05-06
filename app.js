@@ -1,4 +1,4 @@
-var con = confirm("We would like to ask you some questions to find out your preferences, click  [ OK ]  button if you don't mind.");
+/* var con = confirm("We would like to ask you some questions to find out your preferences, click  [ OK ]  button if you don't mind.");
 
 if (con == true) {
 var x = prompt('Which of these colors do you prefer?   *just enter the number*   1.Black   2.Orange   3.Blue')
@@ -79,3 +79,16 @@ function changeColor (color1, color2) {
 
     
 
+
+
+var promo = prompt("What's you promo code?   *if you don't have one choose:   sum2021  ");
+var rate = prompt('From what you know about us give us a rate :  from  1  to  5'); */
+
+var star1 = '<img class="stars" src="./img/star1.svg" alt="">'
+var star2 = '<img class="stars" src="./img/star1.svg" alt="">'
+
+var rate = ""
+
+var starDiv = document.getElementById('rating');
+
+starDiv.innerHTML = "<h1 style='background: red; color:#fff; text-align: center;font-size: 50px;'> Website Is Under Maintenance </h1>";

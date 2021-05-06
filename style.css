@@ -50,6 +50,22 @@ nav ul li a {
     padding: 5px;
 }
 
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.rating span {
+    padding: 10px 10px 0 0;
+    font-size: 25px;
+}
+
+.stars {
+    width: 60px;
+}
+
 .core-title {
     color: #fff;
     font-size: 35px;
@@ -84,6 +100,11 @@ text-align:inherit;
     font-size: 35px;
     color: #344fa1;
     padding: 0 7px;
+}
+
+.promo-h2 {
+    font-family:monospace;
+    color: red;
 }
 
 .items {
