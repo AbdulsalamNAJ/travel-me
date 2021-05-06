@@ -85,10 +85,10 @@ var promo = prompt("What's you promo code?   *if you don't have one choose:   su
 var rate = prompt('From what you know about us give us a rate :  from  1  to  5'); */
 
 var star1 = '<img class="stars" src="./img/star1.svg" alt="">'
-var star2 = '<img class="stars" src="./img/star1.svg" alt="">'
+var star2 = '<img class="stars" src="./img/star2.svg" alt="">'
 
 var rate = ""
 
 var starDiv = document.getElementById('rating');
 
-starDiv.innerHTML = "<h1 style='background: red; color:#fff; text-align: center;font-size: 50px;'> Website Is Under Maintenance </h1>";
+starDiv.innerHTML = star1+star1+star1+star1+star2;
