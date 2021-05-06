@@ -2,6 +2,22 @@ body {
     margin: 20px 60px 0 60px;
     background-color: #abddf8;
     font-family: sans-serif;
+    background-image: url(./img/background.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.background-img {
+    margin-top: 15px;
+    width: 350px;
 }
 
 header {
@@ -57,7 +73,8 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #344fa1;
+    text-decoration: underline;
 }
 
 .rating span {
@@ -67,6 +84,10 @@ nav ul li a {
 
 .stars {
     width: 60px;
+}
+
+.face {
+    width: 100px;
 }
 
 .core-title {
@@ -79,7 +100,7 @@ nav ul li a {
     position: relative;
     display: block;
     padding: 10px;
-    background-color: #ffffff4f;
+    background-color: #ffffffbe;
     border: 5px solid #344fa1;
 }
 
@@ -102,7 +123,7 @@ text-align:inherit;
 
 .offer {
     font-size: 30px;
-    color: #344fa1;
+    color: #fff;
     padding: 0 7px;
 }
 

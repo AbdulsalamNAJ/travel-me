@@ -76,19 +76,70 @@ function changeColor (color1, color2) {
     var footerBar = document.getElementsByTagName('footer');
     footerBar[0].style.backgroundColor = color1;
     }
+*/
 
-    
+var promo;
 
+while (promo !== "sum2021") {
+    promo = prompt("What's you promo code?   * If you don't have one choose:   sum2021  ");
+}
 
+var promoCode = document.getElementById('promo');
 
-var promo = prompt("What's you promo code?   *if you don't have one choose:   sum2021  ");
-var rate = prompt('From what you know about us give us a rate :  from  1  to  5'); */
+promoCode.textContent = "SUM2021";
 
-var star1 = '<img class="stars" src="./img/star1.svg" alt="">'
-var star2 = '<img class="stars" src="./img/star2.svg" alt="">'
+var rate = prompt('From what you know about us give us a rate :  from  1  to  5'); 
 
-var rate = ""
+var star1 = '<img class="stars" src="./img/star1.svg" alt="">';
+var star2 = '<img class="stars" src="./img/star2.svg" alt="">';
+var happy = '<img class="face" src="./img/happy.svg" alt="">';
+var sad = '<img class="face" src="./img/sad.svg" alt="">';
 
 var starDiv = document.getElementById('rating');
+var starCount = '';
+var badRate = 5 - rate;
 
-starDiv.innerHTML = star1+star1+star1+star1+star2;
+if (rate > 0 && rate <= 5) {
+
+for (i=0; i<rate; i++) {
+    starCount += star1;
+}
+
+for (i=0; i<badRate; i++) {
+    starCount += star2;
+}
+
+if (badRate > rate ) {
+    starCount += sad;
+} else {
+    starCount += happy;
+}
+
+starDiv.innerHTML = starCount;
+}
+
+
+var fishType = prompt('Imagin that this background is a real SEA what do you like to see in it?    * Just choose a number:    1.turtles    2.fishes     3.crabs ')
+
+var backGround = document.getElementById('background');
+
+if (fishType == 1) {
+    fishImage = '<img class="background-img" src="./img/turtle.svg" alt="">'
+}
+else if (fishType == 2) {
+    fishImage = '<img class="background-img" src="./img/fish.svg" alt="">'
+}
+else if (fishType == 3) {
+    fishImage = '<img class="background-img" src="./img/crab.svg" alt="">'
+}
+
+var fishMax = prompt('How many of these you would like to see?   * MAX is  [  15  ]');
+
+var fishCount = "";
+
+for (i=0; i<fishMax; i++) {
+    fishCount += fishImage;
+}
+
+backGround.innerHTML = fishCount;
+console.log(fishCount);
