@@ -81,7 +81,8 @@ function changeColor (color1, color2) {
 var promo;
 
 while (promo !== "sum2021") {
-    promo = prompt("What's you promo code?   * If you don't have one choose:   sum2021  ");
+    promo = prompt("You MUST enter a promo code to see our latest offers.   * If you don't have one use:   SUM2021  ");
+    promo = promo.toLowerCase();
 }
 
 var promoCode = document.getElementById('promo');
