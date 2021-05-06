@@ -119,7 +119,7 @@ starDiv.innerHTML = starCount;
 }
 
 
-var fishType = prompt('Imagin that this background is a real SEA what do you like to see in it?    * Just choose a number:    1.turtles    2.fishes     3.crabs ')
+var fishType = prompt('Imagin that this background is a real SEA what would you like to see in it?    * Just choose a number:    1.turtles    2.fishes     3.crabs ')
 
 var backGround = document.getElementById('background');
 
