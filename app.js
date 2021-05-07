@@ -140,13 +140,13 @@ else if (fishType == 3) {
 
 if (fishType !== null) {
     if (3 >= fishType > 0) {
-    var fishMax = prompt('How many of these you would like to see?   * MAX is  [  15  ]');
+    var fishMax = prompt('How many of these you would like to see?   * MAX is  [  12  ]');
 }
 }
 
 var fishCount = "";
 
-if (fishMax <= 15) {
+if (fishMax <= 12) {
     for (i=0; i<fishMax; i++) {
     fishCount += fishImage;
 }

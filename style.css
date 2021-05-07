@@ -201,3 +201,62 @@ footer img {
         transform: rotate(5deg);
     }
 }
+
+@media screen and (max-width: 600px) {
+    body {
+
+      margin: 20px 20px 0 20px;
+    }
+    .background-img {
+        width: 150px;
+    }
+    .logo {
+        width: 50%;
+        padding: 20px 20px;
+    }
+    .nav-btn {
+        margin: 5px 20px;
+        display: block;
+    }
+    .stars {
+        width: 30px;
+    }
+    .face {
+        width: 50px;
+    }
+    .core-title {
+        font-size: 25px;
+    }
+    .core-values {
+        display: block;
+        width: 90%;
+        margin-left: 13px;
+    }
+    .offer {
+        font-size: 25px;
+    }
+    .items {
+        margin: 5px 0;
+        
+    }
+    .items img {
+        width: 300px;
+    }
+    .items h2 {
+        font-size: 25px;
+        width: 300px;
+        padding: 20px 0;
+        bottom: -18px;
+    }
+    .items h3 {
+        font-size:  18px;
+    }
+    footer {
+        flex-direction: column;
+        font-size: 16px;
+    }
+    footer span {
+        padding-bottom: 15px;
+    }
+  }
+  
