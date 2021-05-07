@@ -18,6 +18,10 @@ body {
 .background-img {
     margin-top: 15px;
     width: 350px;
+    animation-name: right-to-left;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 header {
@@ -88,6 +92,7 @@ nav ul li a {
 
 .face {
     width: 100px;
+    margin-left: 20px;
 }
 
 .core-title {
@@ -189,4 +194,10 @@ footer img {
     width: 30px;
     margin: 0 5px -5px 5px;
     cursor: pointer;
+}
+
+@keyframes right-to-left {
+    to {
+        transform: rotate(5deg);
+    }
 }

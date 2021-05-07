@@ -146,9 +146,10 @@ if (fishType !== null) {
 
 var fishCount = "";
 
-for (i=0; i<fishMax; i++) {
+if (fishMax <= 15) {
+    for (i=0; i<fishMax; i++) {
     fishCount += fishImage;
+}
 }
 
 backGround.innerHTML = fishCount;
-console.log(fishCount);
