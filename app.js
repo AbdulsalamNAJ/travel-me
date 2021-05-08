@@ -143,7 +143,7 @@ else if (fishType == 3) {
 
 if (fishType !== null) {
     if (3 >= fishType > 0) {
-    document.body.style.backgroundImage = "url(./img/background.svg)";
+    var seaBackground = document.body.style.backgroundImage = "url(./img/background.svg)";
     var fishMax = prompt('How many of these you would like to see?   * MAX is  [  12  ]');
 }
 }
