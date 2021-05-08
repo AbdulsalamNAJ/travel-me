@@ -154,6 +154,7 @@ if (fishMax <= 12) {
     for (i=0; i<fishMax; i++) {
     fishCount += fishImage;
 }
+
 }
 
 backGround.innerHTML = fishCount;

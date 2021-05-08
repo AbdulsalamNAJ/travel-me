@@ -63,8 +63,8 @@ nav ul li a {
 .log-in {
     background-color: transparent;
     text-decoration: underline;
-    text-underline-position: under;
     color: #fff;
+    text-underline-position: under;
     margin: 5px 3px;
     display: inline-block;
     padding: 10px 25px;
@@ -119,6 +119,10 @@ nav ul li a {
     background-color: #ffffffbe;
     border: 5px solid #344fa1;
     margin-bottom: 25px;
+}
+
+.numbers {
+    width: 35px;
 }
 
 .core-values {
