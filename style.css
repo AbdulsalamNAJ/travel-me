@@ -60,9 +60,10 @@ nav ul li a {
     color: #fff;
 }
 
-.login {
+.log-in {
     background-color: transparent;
     text-decoration: underline;
+    text-underline-position: under;
     color: #fff;
     margin: 5px 3px;
     display: inline-block;
