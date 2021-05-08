@@ -89,9 +89,12 @@ while (promo !== "sum2021") {
 }
 
 
+var promoCode = document.getElementById("promoCode");
+promoCode.textContent = promo.toUpperCase();
+
 var offers = document.getElementById('offers');
 
-offers.innerHTML = '<h2 class="offer">Offers for your promo code : <span class="promo-h2">SUM2021</span></h2><div class="items istanbul"><h3>Special offer</h3><img src="./img/istanbul.jpg" alt=""><h2 class="items-h2">Istanbul</h2></div><div class="items dubai"><h3>Special offer</h3><img src="./img/dubai.jpg" alt=""><h2 class="items-h2">Dubai</h2></div><div class="items doha"><h3>Special offer</h3><img src="./img/doha.jpg" alt=""><h2 class="items-h2">Doha</h2></div><div class="items sharm-el-sheikh"><h3>Special offer</h3><img src="./img/sharm-el-sheikh.jpg" alt=""><h2 class="items-h2">Sharm El Sheikh</h2></div><div class="items beirut"><h3>Special offer</h3><img src="./img/beirut.jpg" alt=""><h2 class="items-h2">Beriut</h2></div><div class="items paphos"><h3>Special offer</h3><img src="./img/paphos.jpg" alt=""><h2 class="items-h2">Paphos</h2></div>';
+offers.innerHTML = '<div class="items beirut"><h3>Special offer<br>Up to 35%</h3><img src="./img/beirut.jpg" alt=""><h2 class="items-h2">Beriut</h2></div><div class="items doha"><h3>Special offer<br>Up to 35%</h3><img src="./img/doha.jpg" alt=""><h2 class="items-h2">Doha</h2></div><div class="items dubai"><h3>Special offer<br>Up to 35%</h3><img src="./img/dubai.jpg" alt=""><h2 class="items-h2">Dubai</h2></div><div class="items istanbul"><h3>Special offer<br>Up to 35%</h3><img src="./img/istanbul.jpg" alt=""><h2 class="items-h2">Istanbul</h2></div><div class="items paphos"><h3>Special offer<br>Up to 35%</h3><img src="./img/paphos.jpg" alt=""><h2 class="items-h2">Paphos</h2></div><div class="items sharm-el-sheikh"><h3>Special offer<br>Up to 35%</h3><img src="./img/sharm-el-sheikh.jpg" alt=""><h2 class="items-h2">Sharm El Sheikh</h2></div>';
 
 var rate = prompt('From what you know about us give us a rate :  from  1  to  5'); 
 
@@ -140,6 +143,7 @@ else if (fishType == 3) {
 
 if (fishType !== null) {
     if (3 >= fishType > 0) {
+    document.body.style.backgroundImage = "url(./img/background.svg)";
     var fishMax = prompt('How many of these you would like to see?   * MAX is  [  12  ]');
 }
 }
