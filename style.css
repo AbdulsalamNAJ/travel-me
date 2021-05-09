@@ -1,6 +1,6 @@
 body {
     margin: 20px 60px 0 60px;
-    background-color: #daefff;
+    background-color: #f0ebcc;
     font-family: sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,8 +29,7 @@ header {
 
 .logo {
     width: 32%;
-    display: i;
-    background-color:#344fa1;
+    background-color:#344fa1 ;
     padding: 20px  50px;
     margin-bottom: -10px;
     border-radius: 15px 15px 0 0;   
@@ -73,7 +72,7 @@ nav ul li a {
 }
 
 .covid-19, .covid-19 a{
-    color: #344fa1;
+    color: #fff;
     text-align: center;
     font-size: 20px;
 }
@@ -88,7 +87,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #344fa1;
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -107,7 +106,7 @@ nav ul li a {
 }
 
 .core-title {
-    color: #344fa1;
+    color: #fff;
     font-size: 28px;
     padding-left: 10px;
 }
@@ -116,8 +115,7 @@ nav ul li a {
     position: relative;
     display: block;
     padding: 10px;
-    background-color: #ffffffbe;
-    border: 5px solid #344fa1;
+    background-color: #78b0d9;
     margin-bottom: 25px;
 }
 
@@ -129,7 +127,7 @@ nav ul li a {
     display: inline-grid;
     width: 30%;
     margin-left: 30px;
-    color: #344fa1;
+    color: #fff;
 }
 
 .core-values h3 {
@@ -144,7 +142,7 @@ text-align:inherit;
 
 .offer {
     font-size: 28px;
-    color: #344fa1;
+    color: #fff;
     padding: 0 7px;
     margin-bottom: 0;
 }
