@@ -34,7 +34,7 @@ if (z == "y") {
 }
 }
 
-*/
+
 
 var promo;
 
@@ -45,8 +45,11 @@ while (promo !== "sum2021") {
     }
     promo = promo.toLowerCase();
 }
-
 promoCode()
+
+
+//<img class="face" src="./img/happy.svg" alt="">
+//<img class="face" src="./img/sad.svg" alt="">
 
 var con = confirm("We would like to ask you some questions to find out your preferences, click  [ OK ]  button if you don't mind.");
 
@@ -90,12 +93,10 @@ if (con == true) {
 // FUNCTIONS WE ARE USING IN OUR PAGE
 
 function promoCode () {
-    var promoCode = document.getElementById("promoCode");
-promoCode.textContent = promo.toUpperCase();
 
 var offers = document.getElementById('offers');
 
-offers.innerHTML = '<div class="items beirut"><h3>Special offer<br>Up to 35%</h3><img src="./img/beirut.jpg" alt=""><h2 class="items-h2">Beriut</h2></div><div class="items doha"><h3>Special offer<br>Up to 35%</h3><img src="./img/doha.jpg" alt=""><h2 class="items-h2">Doha</h2></div><div class="items dubai"><h3>Special offer<br>Up to 35%</h3><img src="./img/dubai.jpg" alt=""><h2 class="items-h2">Dubai</h2></div><div class="items istanbul"><h3>Special offer<br>Up to 35%</h3><img src="./img/istanbul.jpg" alt=""><h2 class="items-h2">Istanbul</h2></div><div class="items paphos"><h3>Special offer<br>Up to 35%</h3><img src="./img/paphos.jpg" alt=""><h2 class="items-h2">Paphos</h2></div><div class="items sharm-el-sheikh"><h3>Special offer<br>Up to 35%</h3><img src="./img/sharm-el-sheikh.jpg" alt=""><h2 class="items-h2">Sharm El Sheikh</h2></div>';
+offers.innerHTML = '';
 }
 
 function changeColor (color1, color2) {
@@ -143,34 +144,25 @@ starCount += happy;
 starDiv.innerHTML = starCount;
 }
 }
+*/
 
-function backFish () {
+let star1 = '<img class = "stars" src="./img/star1.svg" alt=""></img>';
+let star2 = '<img class = "stars" src="./img/star2.svg" alt=""></img>';
+let happy = '<img class = "stars" src="./img/happy.svg" alt=""></img>';
+let sad = '<img class = "stars" src="./img/sad.svg" alt=""></img>'
 
-    if (fishType == 1) {
-        fishImage = '<img class="background-img" src="./img/turtle.svg" alt="">'
-    }
-    else if (fishType == 2) {
-        fishImage = '<img class="background-img" src="./img/fish.svg" alt="">'
-    }
-    else if (fishType == 3) {
-        fishImage = '<img class="background-img" src="./img/crab.svg" alt="">'
-    }
-    
-    if (fishType !== null) {
-        if (3 >= fishType > 0) {
-        var seaBackground = document.body.style.backgroundImage = "url(./img/background.svg)";
-        var fishMax = prompt('How many of these you would like to see?   * MAX is  [  12  ]');
-    }
-    }
-    
-    var fishCount = "";
-    
-    if (fishMax <= 12) {
-        for (i=0; i<fishMax; i++) {
-        fishCount += fishImage;
-    }
-    
-    }
-    
-    backGround.innerHTML = fishCount;
-    }
+document.getElementById("star1").addEventListener("click", function(){
+    document.getElementById("rating").innerHTML = star1 + star2 + star2 + star2 + star2 + sad;
+  }); 
+  document.getElementById("star2").addEventListener("click", function(){
+    document.getElementById("rating").innerHTML = star1 + star1 + star2 + star2 + star2 + sad;
+  }); 
+  document.getElementById("star3").addEventListener("click", function(){
+    document.getElementById("rating").innerHTML = star1 + star1 + star1 + star2 + star2 + happy;
+  }); 
+  document.getElementById("star4").addEventListener("click", function(){
+    document.getElementById("rating").innerHTML = star1 + star1 + star1 + star1 + star2 + happy;
+  }); 
+  document.getElementById("star5").addEventListener("click", function(){
+    document.getElementById("rating").innerHTML = star1 + star1 + star1 + star1 + star1 + happy;
+  }); 
