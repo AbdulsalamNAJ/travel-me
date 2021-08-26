@@ -98,6 +98,7 @@ nav ul li a {
 
 .stars {
     width: 60px;
+    cursor: pointer;
 }
 
 .face {
@@ -147,11 +148,6 @@ text-align:inherit;
     margin-bottom: 0;
 }
 
-.promo-h2 {
-    font-family:monospace;
-    color: red;
-}
-
 .items {
     position: relative;
     overflow:  hidden;
@@ -161,7 +157,7 @@ text-align:inherit;
 }
 
 .items img {
-    width: 400px;
+    width: 350px;
     border-radius: 20px;
 }
 
@@ -185,7 +181,7 @@ text-align:inherit;
     font-size: 30px;
     text-align: center;
     justify-content: center;
-    width: 401px;
+    width: 350px;
     padding: 25px 0;
     border-radius: 0 0 20px 20px;
 }
@@ -210,12 +206,6 @@ footer img {
     width: 30px;
     margin: 0 5px -5px 0px;
     cursor: pointer;
-}
-
-@keyframes right-to-left {
-    to {
-        transform: rotate(5deg);
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -247,9 +237,6 @@ footer img {
         display: block;
         width: 90%;
         margin-left: 13px;
-    }
-    .offer {
-        font-size: 25px;
     }
     .items {
         margin: 5px 0;
