@@ -40,6 +40,9 @@ header {
     padding: 10px 0;
     margin: 0;
     border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .nav-btn {
@@ -52,6 +55,27 @@ header {
     background-color: #3d84b8;
     font-size: 20px;
     font-weight: bold;
+}
+
+.color {
+    margin: 5px 3px;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+}
+
+.colors {
+    margin: inherit;
+}
+
+.color img {
+    width: 20px;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    cursor: pointer;
 }
 
 nav ul li a {
@@ -210,7 +234,6 @@ footer img {
 
 @media screen and (max-width: 600px) {
     body {
-
       margin: 20px 20px 0 20px;
     }
     .background-img {
@@ -223,6 +246,9 @@ footer img {
     .nav-btn {
         margin: 5px 20px;
         display: block;
+    }
+    .nav-ul {
+        flex-direction: column;
     }
     .stars {
         width: 30px;
@@ -262,4 +288,3 @@ footer img {
         padding-bottom: 15px;
     }
   }
-  
