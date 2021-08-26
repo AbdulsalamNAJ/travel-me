@@ -34,8 +34,6 @@ if (z == "y") {
 }
 }
 
-
-
 var promo;
 
 while (promo !== "sum2021") {
@@ -165,4 +163,44 @@ document.getElementById("star1").addEventListener("click", function(){
   }); 
   document.getElementById("star5").addEventListener("click", function(){
     document.getElementById("rating").innerHTML = star1 + star1 + star1 + star1 + star1 + happy;
+  }); 
+
+  function changeColor(color1, color2) {
+    let logo = document.getElementsByClassName('logo');
+    logo[0].style.backgroundColor = color1;
+    
+    let navBar = document.getElementsByClassName('nav-ul');
+    navBar[0].style.backgroundColor = color1;
+    
+    let navBtn = document.getElementsByClassName('nav-btn');
+    for (i=0 ; i< navBtn.length; i++) {
+    navBtn[i].style.backgroundColor = color2;
+    }
+    
+    let coreDiv = document.getElementsByClassName('core-div');
+    coreDiv[0].style.backgroundColor = color2;
+    
+    let itemsH2 = document.getElementsByClassName('items-h2');
+    for (i=0; i<itemsH2.length; i++) {
+    itemsH2[i].style.backgroundColor = color1 + "d1";
+    }
+    
+    let footerBar = document.getElementsByTagName('footer');
+    footerBar[0].style.backgroundColor = color1; 
+  }
+
+  document.getElementById("orange").addEventListener("click", function (){
+    changeColor('#e1701a', '#f7a440')
+  }); 
+
+  document.getElementById("green").addEventListener("click", function (){
+    changeColor('#4aa96c', '#6fc170')
+  }); 
+
+  document.getElementById("black").addEventListener("click", function (){
+    changeColor('#000000', '#535353')
+  }); 
+
+  document.getElementById("blue").addEventListener("click", function (){
+    changeColor('#344fa1', '#78b0d9')
   }); 
