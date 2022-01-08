@@ -41,7 +41,7 @@ header {
     margin: 0;
     border-radius: 15px 15px 0 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -107,12 +107,16 @@ nav ul li a {
     padding: 2px;
 }
 
+section h3 {
+    text-align: center;
+    color: #fff;
+}
+
 .rating {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    text-decoration: underline;
 }
 
 .rating span {
